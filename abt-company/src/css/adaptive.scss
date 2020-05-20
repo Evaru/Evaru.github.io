@@ -1,0 +1,277 @@
+@media screen and (max-width: 1199px) {
+  .header {
+    padding: 0 5%;
+    width: 90%;
+    .header__menu {
+      ul {
+        li {
+          letter-spacing: 0;
+          margin: 0 5px;
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    .header__contacts {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+  main {
+    .company {
+      padding: 0 5%;
+      .company__description {
+        .description {
+          flex-wrap: wrap;
+          p {
+            max-width: 100%;
+            &:first-child {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .about {
+      padding: 0 5%;
+    }
+    .lesson {
+      flex-direction: column;
+      .lesson__seminars {
+        width: auto;
+        padding: 0 5%;
+        width: 90%;
+      }
+      .lesson__soon-seminar {
+        width: 100%;
+        .seminar {
+          padding: 5%;
+          .seminar__description {
+            h3 {
+              font-size: 24px;
+            }
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .carier {
+      padding: 0 5%;
+    }
+    .news {
+      padding: 0 5%;
+    }
+    .reviews {
+      .reviews__content {
+        flex-direction: column;
+        .card {
+          width: 100%;
+        }
+      }
+    }
+    .block-list {
+      justify-content: left;
+    }
+    .slider{
+      .slider__button{
+        margin-left: -25px;
+      }
+      .slider__content{
+        margin-left: 25px;
+      }
+    }
+  }
+  .footer {
+    padding: 0 5%;
+    flex-direction: column;
+    text-align: center;
+    .footer__author {
+      margin: 20px 0;
+    }
+    .footer__socials {
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .footer__politics {
+      margin-bottom: 20px;
+      margin-left: 0;
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    position: fixed;
+    padding: 0 5%;
+    width: 90%;
+    z-index: 9;
+    .header__logo {
+      margin-left: 15%;
+    }
+    .header__menu {
+      .menu-burger {
+        display: block;
+      }
+      ul {
+        display: none;
+        position: fixed;
+        background: #2b2e4b;
+        height: 100vh;
+        width: 100%;
+        right: 0px;
+        top: 55px;
+        z-index: 2;
+        margin-top: 23px;
+        li {
+          line-height: 3;
+          margin-left: 50px;
+          a {
+            font-size: 22px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .header__contacts {
+      white-space: nowrap;
+    }
+    .active-link {
+      border: none;
+    }
+  }
+  main {
+    margin-top: 80px;
+    .company {
+      .company__description {
+        margin-bottom: 20px;
+        .description {
+          flex-direction: column;
+          p {
+            max-width: 100%;
+            &:first-child {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .carier {
+      flex-direction: column;
+      .carier__left-block {
+        width: 100%;
+      }
+      .carier__right-block {
+        width: 100%;
+        .carier__list {
+          h3 {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .news {
+      .form {
+        flex-direction: column;
+        .form__subscribe {
+          align-items: flex-start;
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    .reviews {
+      .reviews__header {
+        flex-direction: column;
+        .button {
+          margin: 0;
+        }
+      }
+      padding: 0 5%;
+      .reviews__content {
+        flex-direction: column;
+        .card {
+          width: 100%;
+        }
+      }
+    }
+    .block__description {
+      .block-text {
+        flex-direction: column;
+      }
+    }
+    .block-list {
+      flex-direction: column;
+    }
+    .slider {
+      .slider__button {
+        margin-left: -3%;
+      }
+      .slider__content {
+        margin-left: 3%;
+      }
+    }
+    .block-list {
+      .block-list__info {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .header {
+    .header__logo {
+      margin-left: 20%;
+      margin-top: 20px;
+      img {
+        width: 50px;
+      }
+    }
+    .menu-burger {
+      width: 30px;
+    }
+  }
+  main {
+    .company {
+      .company__title {
+        h1,
+        h2 {
+          font-size: 24px;
+        }
+      }
+      .company__description {
+        margin-top: 40px;
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .lesson {
+      .lesson__soon-seminar {
+        .seminar {
+          .seminar__price {
+            flex-direction: column;
+            margin-bottom: 20px;
+            .button {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ui-dialog {
+    max-width: 70%;
+    left: 15%!important;
+    right: 15%;
+  }
+}
