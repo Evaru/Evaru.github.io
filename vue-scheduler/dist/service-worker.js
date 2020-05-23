@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.7cd60a8b19717e5a1e442a57e07e06da.js"
+  "/precache-manifest.aaadd111f1f7f17c01587f30224b6459.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "aud"});
